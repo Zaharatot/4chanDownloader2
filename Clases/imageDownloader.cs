@@ -50,6 +50,10 @@ namespace _4chanDownloader2.Clases
         /// Поток загрузки
         /// </summary>
         Thread downloadThread;
+        /// <summary>
+        /// Поток загрузки страницы
+        /// </summary>
+        Thread loadPageThread;
 
         /// <summary>
         /// Инициализация класса загрузки картинок из треда
@@ -107,14 +111,15 @@ namespace _4chanDownloader2.Clases
         {
             try
             {
-                new Thread(delegate ()
+                loadPageThread = new Thread(delegate ()
                 {
                     //Запускаем загрузку страницы
                     aw.Invoke(new Action(delegate ()
                     {
                         aw.wv.Source = new Uri(url);
                     }));
-                }).Start();
+                });
+                loadPageThread.Start();
             }
             catch { }
         }
@@ -288,6 +293,9 @@ namespace _4chanDownloader2.Clases
             //Закрываем поток загрузки
             if (downloadThread != null)
                 downloadThread.Abort();
+
+            if (loadPageThread != null)
+                loadPageThread.Abort();
         }
     }    
 }

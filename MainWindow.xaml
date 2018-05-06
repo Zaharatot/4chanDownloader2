@@ -19,8 +19,8 @@
             AutoGenerateColumns="False"
             BorderBrush="#FFD1D1D1"
             ColumnWidth="*" 
-            HorizontalGridLinesBrush="#FF0B00EE"
-            Foreground="#FFD1D1D1" VerticalGridLinesBrush="#FF0B00EE" HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" EnableRowVirtualization="False" >
+            HorizontalGridLinesBrush="#FFD1D1D1"
+            Foreground="#FF323232" VerticalGridLinesBrush="#FFD1D1D1" HeadersVisibility="Column" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False" EnableRowVirtualization="False" >
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="#FFD1D1D1"></Setter>
