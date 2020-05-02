@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         ResizeMode="NoResize"
         Title="4chanDownloader2" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF323232">
+    <Grid Background="#FF323232" >
         <DataGrid 
             Background="#FF323232"
             HorizontalAlignment="Left" 

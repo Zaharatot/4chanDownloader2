@@ -81,7 +81,6 @@ namespace _4chanDownloader2.Clases
         private void initVariables(string savePath)
         {
             this.savePath = savePath;
-            downloadThread = new Thread(startDownloadThread);
         }
 
 
@@ -100,6 +99,7 @@ namespace _4chanDownloader2.Clases
         private void Aw_browserPageLoaded(object sender, EventArgs e)
         {
             //Запускаем работу, в отдельном потоке
+            downloadThread = new Thread(startDownloadThread);
             downloadThread.Start();
         }
 
@@ -175,6 +175,15 @@ namespace _4chanDownloader2.Clases
                 ex = ex.Replace(".", "");
                 ex = ex.Replace("/", "");
                 ex = ex.Replace("\\", "");
+                ex = ex.Replace(":", "");
+                ex = ex.Replace("<", "");
+                ex = ex.Replace(">", "");
+                ex = ex.Replace("?", "");
+                ex = ex.Replace("\"", "");
+                ex = ex.Replace("'", "");
+                //Грохаем пробелы в начале и конце
+                ex = ex.TrimStart(' ');
+                ex = ex.TrimEnd(' ');
             }
             catch { }
 

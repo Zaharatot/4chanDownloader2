@@ -27,3 +27,4 @@ H:\dwnloader\4chanDownloader2\4chanDownloader2\4chanDownloader2\bin\Debug\4chanD
 H:\dwnloader\4chanDownloader2\4chanDownloader2\4chanDownloader2\bin\Debug\4chanDownloader2.pdb
 H:\dwnloader\4chanDownloader2\4chanDownloader2\4chanDownloader2\obj\Debug\4chanDownloader2.csproj.CopyComplete
 H:\dwnloader\4chanDownloader2\4chanDownloader2\4chanDownloader2\obj\Debug\App.baml
+H:\dwnloader\4chanDownloader2\4chanDownloader2\4chanDownloader2\obj\Debug\4chanDownloader2.csprojAssemblyReference.cache
